@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dugnad Graphics Design</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #fcd34d; color: #333; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: #fcd34d; flex-wrap: wrap; }
+    .logo { font-size: 1.5em; font-weight: bold; }
+    nav a { margin: 10px; text-decoration: none; color: #333; font-weight: 500; }
+    .hero { text-align: center; padding: 60px 20px; background-image:; background-size: cover; background-position: center; color: white; }
+    .hero h1 { font-size: 3em; margin-bottom: 10px; }
+    .hero p { font-size: 1.2em; margin-bottom: 30px; }
+    .btn { background-color: white; color: #fcd34d; padding: 12px 24px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease; }
+    .btn:hover { background-color: #fff3c4; }
+    .section { padding: 40px 20px; background-color: #fff; }
+    .section h2 { text-align: center; margin-bottom: 30px; font-size: 2em; color: #333; }
+    .gallery { display: flex; flex-wrap: wrap; justify-content: center; }
+    .card { width: 280px; margin: 15px; text-align: center; transition: transform 0.3s ease; }
+    .card:hover { transform: scale(1.05); }
+    .card img { width: 100%; border-radius: 10px; }
+    .card h3 { margin-top: 15px; font-size: 1.2em; color: #333; }
+    .contact-form { max-width: 500px; margin: auto; }
+    .contact-form input, .contact-form textarea { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    .contact-form button { background-color: #fcd34d; color: #333; padding: 12px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    footer { background-color: #333; color: white; text-align: center; padding: 20px; }
+    @media (max-width: 600px) { .card { width: 90%; } header { flex-direction: column; align-items: flex-start; } nav { flex-direction: column; align-items: flex-start; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Dugnad Graphics Design</div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>DESIGN WITH PURPOSE</h1>
+    <p>Inspired by Kalixo’s creative energy, Dugnad Graphics Design blends art, ink, and imagination.</p>
+    <button class="btn">Explore More</button>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="branding.png" alt="Branding" />
+        <h3>Branding</h3>
+      </div>
+      <div class="card">
+        <img src="logo design.png" alt="Logo Design" />
+        <h3>Logo Design</h3>
+      </div>
+      <div class="card">
+        <img src="digital illustration.jpg" alt="Digital Illustration" />
+        <h3>Digital Illustration</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="ink concept.jpg" alt="Ink Concept" />
+        <h3>Ink & Paper Concept</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/7d/1e/b4/7d1eb4fec2b915fde163c4bba9b3b93e.jpg" alt="Dragonfly Design" />
+        <h3>Dragonfly Branding</h3>
+      </div>
+      <div class="card">
+        <img src="geometric layout.png" alt="Geometric Layout" />
+        <h3>Geometric Layout</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Dugnad Graphics Design. All rights reserved.
+  </footer>
+
+</body>
+</html>
